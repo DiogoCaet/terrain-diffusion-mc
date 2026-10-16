@@ -2,9 +2,9 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.github.xandergos.terraindiffusionmc.mixin.client",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_25",
   "client": [
-    "CreateWorldScreenWorldTabMixin"
+    "WorldCreationUiStateMixin"
   ],
   "injectors": {
     "defaultRequire": 1

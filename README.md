@@ -1,3 +1,11 @@
+> **Unofficial Minecraft 26.3 port** (branch `26.3`, fork of [xandergos/terrain-diffusion-mc](https://github.com/xandergos/terrain-diffusion-mc), MIT).
+> - Ported to Fabric for 26.3: Mojang names (no Yarn), the 26.x density-function and biome-source APIs,
+>   worldgen data regenerated from vanilla 26.3 (`tools/port_data_26_3.py`), the world-scale screen via
+>   a `PresetEditor` hook.
+> - CUDA build uses ONNX Runtime 1.31 (CUDA 13 + cuDNN 9). On Arch: `cuda` and `cudnn` packages.
+> - Build: `./gradlew build -PuseCuda=true` (NVIDIA) or `-PuseCpu=true`. Java 25.
+> - All terrain/ML work is by the original author; this branch only adapts it to the new game version.
+
 # Terrain Diffusion Fabric Mod [[Modrinth]](https://modrinth.com/mod/terrain-diffusion)
 
 #### UPDATE: The research behind this mod has been accepted to SIGGRAPH 2026, the world's premier graphics conference! That means the research was officially peer reviewed and recognized as a significant contribution to the field. Enjoy the mod!
